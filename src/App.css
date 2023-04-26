@@ -1,0 +1,58 @@
+main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+label p {
+  margin: 0px;
+  text-align: center;
+}
+
+.movies-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 1rem;
+}
+
+.movies-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: max-content;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movies-item p {
+  text-align: center;
+  margin: 0px;
+}
+
+.movies-item img {
+  object-fit: cover;
+  margin: 0;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.35));
+}
