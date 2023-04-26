@@ -1,7 +1,7 @@
 import { useState, useRef, useMemo, useCallback } from 'react'
 import { fetchMovies } from '../services/fetchMovies'
 
-export function useMovies({ searchInput , sort }) {
+export function useMovies ({ searchInput, sort }) {
   const [movies, setMovies] = useState([])
   const [loading, setLoading] = useState(false)
   const previousSearch = useRef(searchInput)
@@ -22,8 +22,8 @@ export function useMovies({ searchInput , sort }) {
 
   const sortedMovies = useMemo(() => {
     return sort
-    ? [...movies].sort((a, b) => a.Title.localeCompare(b.Title))
-    : movies
+      ? [...movies].sort((a, b) => a.Title.localeCompare(b.Title))
+      : movies
   }, [sort, movies])
 
   return { movies: sortedMovies, loading, getMovies }
