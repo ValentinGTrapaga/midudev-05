@@ -1,5 +1,13 @@
 ## Enunciado
 
+Challenge creado para aprender usos de
+
+```javascript
+useRef, useMemo, useCallback
+```
+
+Tambien se uso https://github.com/oxalorg/sakura/ como css framework classless
+
 Crea una aplicación para buscar películas
 
 API a usar: - https://www.omdbapi.com/
@@ -24,3 +32,5 @@ Consigue la API Key en la propia página web registrando tu email.
 - Haz que la búsqueda se haga automáticamente al escribir. ✅
 
 - Evita que se haga la búsqueda continuamente al escribir (debounce) ✅
+
+Gracias a [@midudev](https://github.com/midudev)
